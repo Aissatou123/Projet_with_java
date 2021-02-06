@@ -1,7 +1,7 @@
-Nom étudiant :
-Numéro d’étudiant :
+Nom étudiant :AÏssatou Kangou DIOME
+Numéro d’étudiant :300139476
 Code du cours : ITI1521
-Section Lab: 
+Section Lab: A01
 ___________________________________
 Nom étudiant : Yephihy Akissi Paule Noura OFFIA
 Numéro d’étudiant : 300201661
