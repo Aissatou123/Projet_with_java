@@ -1,4 +1,4 @@
-Nom étudiant :AÏssatou Kangou DIOME
+Nom étudiant :Aïssatou Kangou DIOME
 Numéro d’étudiant :300139476
 Code du cours : ITI1521
 Section Lab: A01
