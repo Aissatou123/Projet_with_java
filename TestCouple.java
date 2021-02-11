@@ -8,7 +8,8 @@ public class TestCouple{
 		c3.display();
 			c3.setP(8);
 		    System.out.println("Après modification, les éléments de c3 sont: "+c3.getP()+","+c3.getQ());
-		    compare(c1,c3); //ERREUR ICI
-		    System.out.println("c1 inférieur à c3: "+comparé);
+		    Couple cc=new Couple();
+		    cc.compare(c1,c3); 
+		    System.out.println("c1 inférieur à c3: "+cc.compare(c1,c3));
 	}
 }
