@@ -1,4 +1,3 @@
-//REVOIR TOUT
 public class Couple {
   private int p,q;
   public Couple(int membre1, int membre2) {
