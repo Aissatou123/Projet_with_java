@@ -15,7 +15,8 @@ q= 0;
 }
 	//constructeur qui initialise un couple a l'aide d'un autre couple//
 public Couple (Couple x) {
-
+this.p=x.getP();
+this.q=x.getQ();
 
 }
 	//accesseurs//
