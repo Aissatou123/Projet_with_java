@@ -130,15 +130,18 @@ public class GUI extends JFrame implements ActionListener{ // notre classe GUI q
 			}	
 			else{ // Si on a cliqué sur quelque chose d'autre qu'un chiffre et "C"
 				nombre = Double.parseDouble(numInput); // Conversion de numInput en double		
+				cal.operation(nombre);
 				
 				numInput = "0"; // réinitialise numInput
 				
-							
+				
+				
 				
 				
 				if (command.equals("=")){ // Si on clique sur "="
+					cal.compute();
 					line = line +cal.display(); // Le résultat sera affiché
-					}
+					} else {cal.operation(command);}
 				
 				// C'est dans ce bloc qu'il faut coder de telle
 				//sorte que les opérations s'effectuent 

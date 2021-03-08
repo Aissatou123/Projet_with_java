@@ -1,7 +1,7 @@
 //QUESTION 1
 import java.lang.Math;
 public class Calculator{ // notre classe calculator qui effectue les calcule et stock nos données
-	private double first = 0 ; // Variable first pour le choix d'un premier chiffre qui est obligatoire
+	private double first ; // Variable first pour le choix d'un premier chiffre qui est obligatoire
 		
 	private double second; // variable second qui stock notre premier choix et qui représente le choix du second chiffre
 	
@@ -11,15 +11,25 @@ public class Calculator{ // notre classe calculator qui effectue les calcule et 
 	}
 	
 	
-	private String oP; // variable oP qui va reconnaitre les touches +,-,*...
+	private String oP; // variable oP qui va reconnaitre les touches +,-,*..
+	private boolean isItFirst = true; //Vérifie si la 1ere opérande a déjà été prise en compte
+	
 	public Calculator(){ //construction sans paramètre de notre classe Calculator
 	}
-	void operation(String str){ // méthode qui stock nos variables
-		first=second; // garde la 1ère opérande
-		second=0; // initialise et mise à jour la 2e opérande
-		oP= str;
+	
+	void operation(double number){ // méthode qui stock nos variables
+		if (isItFirst == true){ //S'il s'agit de la première opérande
+		first= number; // garde la 1ère opérande
+		isItFirst = false; 
+		} else { // S'il s'agit  de la deuxième opérande
+		second = number;
+		}
 	}
 	
+	void operation(String str){
+		oP= str;
+		
+		}
 	
 	
 	void add(){operation("+");}// addition
@@ -62,6 +72,7 @@ public class Calculator{ // notre classe calculator qui effectue les calcule et 
 		if(oP=="C"){
 			first=0;
 			second=0;
+			isItFirst = true;
 		}
 
 	}
