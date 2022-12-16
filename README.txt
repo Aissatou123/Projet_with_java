@@ -3,7 +3,7 @@ Numéro d’étudiant :300139476
 Code du cours : ITI1521
 Section Lab: A01
 ___________________________________
-Nom étudiant : Noura :)
+Nom étudiant : Noura O.
 Numéro d’étudiant : 300201661
 Code du cours : ITI1521
 Section Lab: A02
